@@ -8,7 +8,7 @@ export default function Home() {
         <button 
           onClick={() => {
             sendGAEvent('event', 'buttonClickasas', { value: '12' })
-            sendGTMEvent({ event: 'buttonClicked', value: 'xyz' })
+            sendGTMEvent({ event: 'buttonClicke1212d', value: 'xyz' })
           }}
         >
           asdasd
