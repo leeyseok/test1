@@ -1,5 +1,5 @@
 'use client'
-import { sendGAEvent, sendGTMEvent } from "@next/third-parties/google";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 export default function Home() {
   return (
@@ -7,7 +7,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <button 
           onClick={() => {
-            sendGAEvent('event', 'buttonClickasas', { value: '12' })
+            // sendGAEvent('event', 'buttonClickasas', { value: '12' })
             sendGTMEvent({ event: 'buttonClicke1212d', value: 'xyz' })
           }}
         >
