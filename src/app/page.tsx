@@ -7,7 +7,9 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <button 
           onClick={() => sendGAEvent({ event: 'buttonClicked', value: 'xyz' })}
-        ></button>
+        >
+          asdasd
+        </button>
       </main>
     </div>
   );
