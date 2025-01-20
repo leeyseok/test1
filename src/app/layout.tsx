@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
-import Script from "next/script";
+// import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script
+        {/* <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-LM3C2LHWQ5"
           strategy="afterInteractive"
         />
@@ -41,15 +41,15 @@ export default function RootLayout({
 
           gtag('config', 'G-LM3C2LHWQ5');`
         }
-        </Script>
-        
-      </head>
+        </Script> */}
+        </head>
+        <GoogleTagManager gtmId="GTM-5BSXM59T"/>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=G-LM3C2LHWQ5"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5BSXM59T"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden"}}
@@ -58,7 +58,6 @@ export default function RootLayout({
         </noscript>
         {children}
         <GoogleAnalytics gaId="G-LM3C2LHWQ5"/>
-        <GoogleTagManager gtmId="GTM-5BSXM59T"/>
       </body>
     </html>
   );
