@@ -57,7 +57,7 @@ export default function RootLayout({
           </iframe>
         </noscript>
         {children}
-        <GoogleAnalytics gaId="G-LM3C2LHWQ5" />
+        <GoogleAnalytics gaId="G-LM3C2LHWQ5"/>
       </body>
     </html>
   );
